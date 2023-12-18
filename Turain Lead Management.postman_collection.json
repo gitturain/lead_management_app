@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "45cf57e1-939b-44ec-bae6-ab5a6553a567",
-		"name": "Turain Lead Management (Local)",
+		"name": "Turain Lead Management",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "26559429"
 	},
@@ -16,7 +16,7 @@
 					"formdata": [
 						{
 							"key": "txt_username",
-							"value": "sounak",
+							"value": "sanjit",
 							"type": "text"
 						},
 						{
@@ -161,6 +161,50 @@
 					"raw": "{{base_url}}check_username",
 					"host": [
 						"{{base_url}}check_username"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "txt_current_password",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "txt_new_password",
+							"value": "1234",
+							"type": "text"
+						},
+						{
+							"key": "txt_confirm_password",
+							"value": "1234",
+							"type": "text"
+						},
+						{
+							"key": "txt_user_details_id",
+							"value": "22",
+							"type": "text"
+						},
+						{
+							"key": "txt_token",
+							"value": "b6d767d2f8ed5d21a44b0e5886680cb9",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}change_password",
+					"host": [
+						"{{base_url}}change_password"
 					]
 				}
 			},
